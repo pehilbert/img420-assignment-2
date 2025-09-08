@@ -4,6 +4,6 @@
 
 using namespace godot;
 
-void initialize_GodotSampleProject_module(ModuleInitializationLevel p_level);
-void uninitialize_GodotSampleProject_module(ModuleInitializationLevel p_level);
+void initialize_library_module(ModuleInitializationLevel p_level);
+void uninitialize_library_module(ModuleInitializationLevel p_level);
 

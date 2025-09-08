@@ -4,6 +4,6 @@
 
 [node name="Main" type="Node2D"]
 
-[node name="GodotSampleProject" type="GodotSampleProject" parent="."]
+[node name="GodotSampleProject" type="GDExample" parent="."]
 texture = ExtResource("1_ig7tw")
 centered = false

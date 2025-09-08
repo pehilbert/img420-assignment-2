@@ -14,7 +14,8 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(godot-cpp)
 
 # --- Project def ---
-get_filename_component(PROJECT_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+cmake_path(GET CMAKE_CURRENT_SOURCE_DIR PARENT_PATH MY_PARENT_DIR)
+get_filename_component(PROJECT_NAME ${MY_PARENT_DIR} NAME)
 string(REPLACE " " "_" PROJECT_NAME ${PROJECT_NAME})
 project(${PROJECT_NAME} LANGUAGES C CXX)
 
@@ -60,3 +61,20 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
     INTERPROCEDURAL_OPTIMIZATION_RELEASE ON
 )
 
+set(GDEXTENSION_CONTENT
+"[configuration]
+entry_symbol = \"library_init\" 
+compatibility_minimum = \"4.2\"
+reloadable = true
+
+[libraries]
+windows.debug.x86_64 = \"res://bin/${PROJECT_NAME}.debug.dll\"
+windows.release.x86_64 = \"res://bin/${PROJECT_NAME}.dll\"
+")
+
+# Generate the file
+file(CONFIGURE
+    OUTPUT "${CMAKE_CURRENT_SOURCE_DIR}/../godot/bin/library.gdextension"
+    CONTENT "${GDEXTENSION_CONTENT}"
+    NEWLINE_STYLE UNIX
+)
