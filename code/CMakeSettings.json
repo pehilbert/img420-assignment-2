@@ -12,19 +12,14 @@
       "ctestCommandArgs": "",
       "variables": [
         {
-          "name": "CMAKE_BUILD_TYPE",
-          "value": "Debug",
-          "type": "STRING"
-        },
-        {
           "name": "GODOTCPP_TARGET",
           "value": "template_debug",
           "type": "STRING"
         },
         {
-          "name": "FETCHCONTENT_BASE_DIR",
-          "value": "D:/GPV/GodotSampleProject/code/out/build/x64-Debug/_deps",
-          "type": "PATH"
+          "name": "CMAKE_MSVC_RUNTIME_LIBRARY",
+          "value": "MultiThreadedDebug",
+          "type": "STRING"
         }
       ]
     },
@@ -40,19 +35,14 @@
       "inheritEnvironments": [ "msvc_x64_x64" ],
       "variables": [
         {
-          "name": "CMAKE_BUILD_TYPE",
-          "value": "Release",
-          "type": "STRING"
-        },
-        {
           "name": "GODOTCPP_TARGET",
           "value": "template_release",
           "type": "STRING"
         },
         {
-          "name": "FETCHCONTENT_BASE_DIR",
-          "value": "D:/GPV/GodotSampleProject/code/out/build/x64-Release/_deps",
-          "type": "PATH"
+          "name": "CMAKE_MSVC_RUNTIME_LIBRARY",
+          "value": "MultiThreaded",
+          "type": "STRING"
         }
       ]
     }

@@ -14,7 +14,8 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(godot-cpp)
 
 # --- Project def ---
-set(PROJECT_NAME GodotSampleProject)
+get_filename_component(PROJECT_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+string(REPLACE " " "_" PROJECT_NAME ${PROJECT_NAME})
 project(${PROJECT_NAME} LANGUAGES C CXX)
 
 # C++ Standard
@@ -32,7 +33,7 @@ set(CMAKE_COLOR_DIAGNOSTICS ON)
 set(CMAKE_COLOR_MAKEFILE ON)
 
 # Define build output folders
-set(BUILD_PATH ${CMAKE_SOURCE_DIR}/../godot/bin)
+ set(BUILD_PATH ${CMAKE_SOURCE_DIR}/../godot/bin)
  set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${BUILD_PATH}")
  set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${BUILD_PATH}")
  set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${BUILD_PATH}") 
