@@ -26,7 +26,11 @@ Building the x64-Release version of the dll to export the godot project (then yo
 ## Rename project
 To rename the project
 - rename top folder name
-- rename and edit GodotSampleProject.gdextension in godot\bin to point at your dll
+- clean godot/build folder content
+- switch build configuration (debug/release) so CMake re-generates some files
+- get a well-deserved toast
+- build
+  
   
 
 
