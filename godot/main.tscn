@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bc1883ay8ogul"]
+
+[ext_resource type="Texture2D" uid="uid://baud8cqs3o1jb" path="res://icon.svg" id="1_ig7tw"]
+
+[node name="Main" type="Node2D"]
+
+[node name="GodotSampleProject" type="GodotSampleProject" parent="."]
+texture = ExtResource("1_ig7tw")
+centered = false

@@ -1,0 +1,19 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "cppvsdbg",
+      "exe": "D:\\GPV\\Godot\\Godot_v4.4.1-stable_win64.exe",
+      "project": "CMakeLists.txt",
+      "projectTarget": "",
+      "args": [
+        "--verbose",
+        "--path",
+        "D:\\GPV\\GodotSampleProject\\godot\\"
+      ],
+      "cwd": "D:\\GPV\\GodotSampleProject\\godot\\"
+    }
+  ]
+}
