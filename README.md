@@ -25,11 +25,14 @@ Building the x64-Release version of the dll to export the godot project (then yo
 
 ## Rename project
 To rename the project
+- close VS
+- delete .vs folder in code
+- delete out folder in code
+- delete bin folder in godot
 - rename top folder name
-- clean godot/build folder content
-- switch build configuration (debug/release) so CMake re-generates some files
+- open code folder in VS
 - get a well-deserved toast
-- build
+
   
   
 
