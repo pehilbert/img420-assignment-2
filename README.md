@@ -1,3 +1,5 @@
+<img align="left" width="100" height="100" alt="Profil2_sym_100" src="https://github.com/user-attachments/assets/eb732e26-5008-46cd-989b-152fb5f8683b" />
+
 # GodotSampleGDExtension
 Sample Godot Project with C++ dll (GDExtension) with Visual Studio debugging.
 
