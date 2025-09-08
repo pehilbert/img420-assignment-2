@@ -123,3 +123,4 @@ build/
 
 #Visual Studio ignores
 .vs
+/godot/bin
