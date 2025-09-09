@@ -16,12 +16,12 @@ After opening, CMAKE should generate the proper build scripts (you can see it in
 
 ## Build and debug
 When building, it first retrieves and compiles godot-cpp versioin 4.4 (to change this, edit CMakLists.txt)
-The compiled dll is then copied to godot/bin where GodotSampleProject.gdextension tells Godot about it
+The compiled dll is then copied to godot/bin where library.gdextension tells Godot about it
 
 Build the x64-Debug version of the dll to debug, and select Debug debug target to launch and debug the godot project directly.
 Select Edit debug target to launch the godot editor. To debug while the editor is launched you will need to attach manually to the running project.
 
-Building the x64-Release version of the dll to export the godot project (then you should uncheck debug in godot export)
+Build the x64-Release version of the dll to export the godot project (then you should uncheck debug in godot export)
 
 ## Rename project
 To rename the project
