@@ -13,6 +13,7 @@ https://docs.godotengine.org/en/4.4/tutorials/scripting/gdextension/gdextension_
 ## Open in Visual Studio
 #### Requirement: Visual Studio installed with "Desktop deveopment in C++" workload.
 https://visualstudio.microsoft.com/fr/downloads/
+
 To open it in Visual Studio, chose "Open a Local Folder" and the code folder
 After opening, CMAKE should generate the proper build scripts (you can see it in Output)
 
