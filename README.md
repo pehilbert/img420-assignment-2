@@ -29,7 +29,7 @@ To rename the project
 - delete .vs folder in code
 - delete out folder in code
 - delete bin folder in godot
-- rename top folder name
+- rename top folder
 - open code folder in VS
 - get a well-deserved toast
 
