@@ -14,3 +14,7 @@ config/name="GodotSampleProject"
 run/main_scene="uid://bc1883ay8ogul"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="GodotSampleProject"

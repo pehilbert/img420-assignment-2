@@ -1,9 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://bc1883ay8ogul"]
+[gd_scene load_steps=3 format=3 uid="uid://bc1883ay8ogul"]
 
+[ext_resource type="Script" uid="uid://c04t112b3fvm" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://baud8cqs3o1jb" path="res://icon.svg" id="1_ig7tw"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_0xm2m")
 
 [node name="GodotSampleProject" type="GDExample" parent="."]
+amplitude = 200.0
+speed = 320513.0
 texture = ExtResource("1_ig7tw")
 centered = false
+
+[connection signal="position_changed" from="GodotSampleProject" to="." method="_on_godot_sample_project_position_changed"]
