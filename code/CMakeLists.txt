@@ -34,7 +34,7 @@ set(CMAKE_COLOR_DIAGNOSTICS ON)
 set(CMAKE_COLOR_MAKEFILE ON)
 
 # Define build output folders
- set(BUILD_PATH ${CMAKE_SOURCE_DIR}/../assignment-1/bin)
+ set(BUILD_PATH ${CMAKE_SOURCE_DIR}/../game/bin)
  set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${BUILD_PATH}")
  set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${BUILD_PATH}")
  set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${BUILD_PATH}") 
@@ -74,7 +74,7 @@ windows.release.x86_64 = \"res://bin/${PROJECT_NAME}.dll\"
 
 # Generate the file
 file(CONFIGURE
-    OUTPUT "${CMAKE_CURRENT_SOURCE_DIR}/../assignment-1/bin/library.gdextension"
+    OUTPUT "${CMAKE_CURRENT_SOURCE_DIR}/../game/bin/library.gdextension"
     CONTENT "${GDEXTENSION_CONTENT}"
     NEWLINE_STYLE UNIX
 )

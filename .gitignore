@@ -4,6 +4,8 @@
 .nomedia
 *.uid
 
+game/bin
+
 # Godot-specific ignores
 .import/
 export.cfg
