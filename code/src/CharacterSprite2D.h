@@ -3,6 +3,7 @@
 #include <godot_cpp/classes/sprite2d.hpp>
 #include <godot_cpp/classes/timer.hpp>
 
+// Implements i-frames and death animations for a Player node
 namespace godot {
 	class CharacterSprite2D : public Sprite2D {
 		GDCLASS(CharacterSprite2D, Sprite2D)

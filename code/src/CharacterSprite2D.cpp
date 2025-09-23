@@ -37,7 +37,9 @@ CharacterSprite2D::~CharacterSprite2D() {
 }
 
 void CharacterSprite2D::_ready() {
+	// connect events from oarent player node
 	Node* player = get_parent();
+
 	if (player) {
 		player->connect(
 			"iframes_start",
@@ -57,6 +59,7 @@ void CharacterSprite2D::_ready() {
 }
 
 void CharacterSprite2D::_exit_tree() {
+	// disconnect events on destruction
 	Node* player = get_parent();
 
 	if (player) {
@@ -102,8 +105,8 @@ void CharacterSprite2D::remove_transparency() {
 	set_modulate(Color(1, 1, 1, 1));
 }
 
+// fade-out death animation
 void CharacterSprite2D::death_animation(Node* player) {
-	// optional: stop other logic while dying
 	set_process(false);
 	set_physics_process(false);
 
