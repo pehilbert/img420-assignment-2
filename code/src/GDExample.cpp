@@ -22,6 +22,7 @@ GDExample::GDExample() {
 	time_passed = 0.0;
 	amplitude = 10.0;
 	speed = 1.0;
+	time_emit = 0.0;
 }
 
 GDExample::~GDExample() {

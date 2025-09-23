@@ -1,6 +1,7 @@
 #include "register_types.h"
 
 #include "GDExample.h"
+#include "CharacterSprite2D.h"
 
 #include <gdextension_interface.h>
 #include <godot_cpp/core/defs.hpp>
@@ -14,6 +15,7 @@ void initialize_library_module(ModuleInitializationLevel p_level) {
 	}
 
 	GDREGISTER_RUNTIME_CLASS(GDExample);
+	GDREGISTER_RUNTIME_CLASS(CharacterSprite2D);
 }
 
 void uninitialize_library_module(ModuleInitializationLevel p_level) {
