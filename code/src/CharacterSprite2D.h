@@ -9,6 +9,11 @@ namespace godot {
 
 	private:
 		double iframes_alpha;
+		double death_animation_duration;
+
+		void death_animation(Node* player);
+		void _on_death_tween_finished();
+
 		void _on_player_iframes_start(Node* player);
 		void _on_player_iframes_stop(Node* player);
 
@@ -25,8 +30,8 @@ namespace godot {
 		double get_iframes_alpha();
 		void set_iframes_alpha(double alpha);
 
-		Color get_hit_color();
-		void set_hit_color(Color p_hit_color);
+		double get_death_anim_duration();
+		void set_death_anim_duration(double duration);
 
 		void apply_transparency();
 		void remove_transparency();
